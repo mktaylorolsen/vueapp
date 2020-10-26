@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Taylor Family Italy Itinerary</title>
+    <meta name="author" content="MK Olsen - Would Be Wild">
+    <meta name="description" content="The intinerary for the Taylor family's 2019 trip to Italy.">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <body class="container-fluid">
+    <main id="dataContainer">
+        <div class="col-12" v-if=!seen @click="seen = !seen">
+            <h1 class="page-title">Taylor Family Italy Trip Itinerary</h1>
+            <div class="date-list row">
+                <button class="btn" v-for="item in uniqueDateList" @click="dateListToItinerary(item)">{{item}}</button>
+            </div>
+        </div>
+        <div class="col-12" v-else>
+          <div v-if=!expCardOpen>
+              <p class="return" @click="seen = !seen"><i class="fas fa-angle-double-left"></i> Back to list</p>
+              <h1 class="page-title">{{itineraryDate}}</h1>
+              <div class="row item-card" @click="expCardOpen = !expCardOpen, openExpCard(item)" v-for="item in itinerary">
+                  <div class="col-3">
+                    <span class="circle" v-bind:class="[item.eventType]">
+                      <i v-if="item.eventType === 'free'" class="fas fa-glass-cheers"></i>
+                      <i v-else-if="item.eventType === 'travel'" class="fas fa-shuttle-van"></i>
+                      <i v-else-if="item.eventType === 'tour'" class="fas fa-landmark"></i>
+                      <i v-else class="fas fa-utensils"></i>
+                    </span>
+                  </div>
+                  <div class="col-8">
+                      <h4 class="item-time">{{item.eventTime}}</h4>
+                      <h5 class="item-title">{{item.eventTitle}}</h5>
+                  </div>
+                  <div class="col-1">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="exp-card row" v-else>
+            <div class="col-12 img-row">
+              <img class="exp-card-img" v-if="expandedCard.eventType === 'free'" src='img/free.jpg'>
+              <img class="exp-card-img" v-else-if="expandedCard.eventType === 'travel'" src='img/train-car.jpg'>
+              <img class="exp-card-img" v-else-if="expandedCard.eventType === 'tour'" src='img/statue.jpg'>
+              <img class="exp-card-img" v-else src='img/pasta.jpg'></i>
+            </div>
+            <div class="col-12">
+              <p class="ec-event-type event-type-text" v-bind:class="expandedCard.eventType">{{expandedCard.eventType}}</p>
+            </div>
+            <div class="col-12">
+              <p class="ec-event-title">{{expandedCard.eventTitle}}</p>
+            </div>
+            <div class="col-12">
+              <p class="ec-event-time">{{expandedCard.eventTime}}</p>
+            </div>
+            <div class="col-12 ec-event-locals">
+              <div class="row">
+                  <div class="col-6">
+                      <a href="" class="ec-event-local">{{expandedCard.eventLocal}}</a>
+                  </div>
+                  <div class="col-6" class="ec-event-map">
+                      <div class="mapouter">
+                        <div class="gmap_canvas">
+                          <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=rome%2C%20italy&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <h6 class="info-header">Information</h6>
+              <p class="ec-event-info">{{expandedCard.eventInfo}}</p>
+            </div>
+            <div class="col-12">
+                <button class="btn close-btn" v-bind:class="expandedCard.eventType" @click="expCardOpen = !expCardOpen">CLOSE</button>
+            </div>
+          </div>
+      </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+

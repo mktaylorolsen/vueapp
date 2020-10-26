@@ -1,0 +1,181 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(img/florence-dome.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: content-box;
+  background-size: 100%;
+  color: #1D1939;
+  font-weight: 400;
+  width: 375px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 96px;
+}
+
+.return {
+  padding-top: 8px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.date-list .btn {
+  text-align: center;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 8px;
+  width: 340px;
+  height: 40px;
+  border-radius: 0;
+}
+
+.item-card {
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+.item-card .circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: inline-block;
+}
+
+.item-card .circle i {
+  color: white;
+  padding: 30%;
+}
+
+.item-card .fa-ellipsis-v {
+  float: right;
+  margin-top: 25px;
+}
+
+.item-card h4 {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.item-card h5 {
+  font-size: 16px;
+}
+
+.exp-card {
+  background-color: white;
+  height: 100vh;
+}
+
+.exp-card .img-row {
+  height: 146px;
+  padding: 0;
+}
+
+.exp-card .exp-card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.exp-card .ec-event-type {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  margin-top: -20px;
+  color: '';
+}
+
+.exp-card .ec-event-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-top: -20px;
+}
+
+.exp-card .ec-event-time {
+  font-size: 36px;
+  font-weight: 100;
+  margin-bottom: 0px;
+  margin-top: -25px;
+}
+
+.exp-card a {
+  font-weight: 100;
+}
+
+.exp-card .ec-event-locals {
+  margin-top: 44px;
+}
+
+.exp-card .info-header {
+  font-size: 20px;
+  margin-top: 44px;
+}
+
+.exp-card .close-btn {
+  text-align: center;
+  margin: auto;
+  width: 340px;
+  height: 40px;
+}
+
+.mapouter {
+  text-align: right;
+  height: 100px;
+  width: 150px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100px;
+  width: 150px;
+}
+
+.travel {
+  background-color: #63D5E9;
+}
+
+.food {
+  background-color: #FFA17E;
+}
+
+.tour {
+  background-color: #5895D6;
+}
+
+.free {
+  background-color: #e9e763;
+}
+
+.event-type-text {
+  background-color: transparent !important;
+}
+
+.event-type-text.travel {
+  color: #63D5E9 !important;
+}
+
+.event-type-text.food {
+  color: #FFA17E !important;
+}
+
+.event-type-text.tour {
+  color: #5895D6 !important;
+}
+
+.event-type-text.free {
+  color: #e9e763 !important;
+}
+/*# sourceMappingURL=styles.css.map */

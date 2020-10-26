@@ -1,0 +1,177 @@
+$color-primary:#1D1939;
+$color-aqua:#63D5E9;
+$color-yellow:rgb(233, 231, 99);
+$color-coral:#FFA17E;
+$color-peri:#5895D6;
+$white:white;
+
+$font-size-xl:36px;
+$font-size-lg:24px;
+$font-size-md:20px;
+$font-size-sm:18px;
+$font-size-xs:16px;
+$font-size-icon:18px;
+
+$font-wt-bold:700;
+$font-wt-light:300;
+$font-wt-thin:100;
+
+$card-spacing:44px;
+$left-align:10px;
+
+$btn-width:340px;
+$btn-height:40px;
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(img/florence-dome.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: content-box;
+    background-size: 100%;
+    color: #1D1939;
+    font-weight: 400;
+    width: 375px;
+}
+.container-fluid{
+    padding:0;
+}
+h1{
+    font-size:$font-size-xl;
+    font-weight:$font-wt-thin;
+    text-align: center;
+    margin-top:48px;
+    margin-bottom:96px;
+}
+.return{
+    padding-top:8px;
+    text-transform: uppercase;
+    color: $white;
+}
+.date-list{
+    .btn{
+        text-align:center;
+        background-color:$white;
+        margin:auto;
+        margin-bottom:8px;
+        width:$btn-width;
+        height:$btn-height;
+        border-radius:0;
+    }
+}
+.item-card{
+    background-color:$white;
+    margin-bottom:4px;
+    .circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-top:10%;
+        margin-bottom:10%;
+        display: inline-block;
+        i{
+            color:$white;
+            padding:30%;
+        }
+    }
+    .fa-ellipsis-v{
+        float:right;
+        margin-top:25px;
+    }
+    h4{
+        font-size:$font-size-lg;
+        font-weight:$font-wt-thin;
+    }
+    h5{
+        font-size:$font-size-xs;
+    }
+}
+.exp-card{
+    background-color: $white;
+    height:100vh;
+    .img-row{
+        height:146px;
+        padding:0;
+    }
+    .exp-card-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .ec-event-type{
+        font-size: $font-size-xs;
+        text-transform: uppercase;
+        margin-bottom:0px;
+        margin-top:-20px;
+        color:'';
+    }
+    .ec-event-title{
+        font-size: $font-size-lg;
+        font-weight:$font-wt-bold;
+        margin-bottom:0px;
+        margin-top:-20px;
+    }
+    .ec-event-time{
+        font-size: $font-size-xl;
+        font-weight:$font-wt-thin;
+        margin-bottom:0px;
+        margin-top:-25px;
+    }
+    a{
+        font-weight:$font-wt-thin;
+    }
+    .ec-event-locals{
+        margin-top:$card-spacing;
+    }
+    .info-header{
+        font-size: $font-size-md;
+        margin-top:$card-spacing;
+    }
+    .close-btn{
+        text-align: center;
+        margin:auto;
+        width:$btn-width;
+        height:$btn-height;
+    }
+}
+
+.mapouter{
+    text-align:right;
+    height:100px;
+    width:150px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:100px;
+    width:150px;
+}
+
+.travel{
+    background-color:$color-aqua;
+}
+.food{
+    background-color:$color-coral;
+}
+.tour{
+    background-color:$color-peri;
+}
+.free{
+    background-color:$color-yellow;
+}
+
+.event-type-text{
+    background-color:transparent !important;
+}
+.event-type-text.travel{
+        color:$color-aqua !important;
+    }
+.event-type-text.food{
+        color:$color-coral !important;
+    }
+.event-type-text.tour{
+        color:$color-peri !important;
+    }
+.event-type-text.free{
+        color:$color-yellow !important;
+    }
