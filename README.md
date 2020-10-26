@@ -1,8 +1,28 @@
-# vueapp
-Itinerary app built with Vue.js for an Italy vacation
+# Italy Getaway Itinerary Vue App
+## Itinerary app built with Vue.js for an Italy vacation
 
-If you want to embed images, this is how you do it:
+See below for the wireframes and mock-ups.
 
-![Wireframe](https://github.com/mktaylorolsen/vueapp/blob/main/img/florence-dome.jpg)
+#### Mobile App Landing Page
+Wireframe
+![Wireframe](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/LANDINGPAGE.png)
 
+Mock-up
+![MockUp](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/LANDINGPAGECOLOR.png)
+
+
+#### Itinerary List
+Wireframe
+![Wireframe](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/ITINERARYCARDLIST.png)
+
+Mock-up
+![MockUp](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/ITINERARYCARDLISTCOLOR.png)
+
+
+#### Event Item
+Wireframe
+![Wireframe](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/EXPANDEDCARD.png)
+
+Mock-up
+![MockUp](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/EXPANDEDCARDCOLOR.png)
 
