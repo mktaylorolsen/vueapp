@@ -3,23 +3,17 @@
 
 See below for the wireframes and mock-ups.
 
-#### Mobile App Landing Page
-###### Wireframe
-![Wireframe](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/LANDINGPAGE.png)
+## Mobile App Landing Page
 
-###### Mock-up
-![MockUp](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/LANDINGPAGECOLOR.png)
+![Wireframe](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/LANDINGPAGE.png)  ![MockUp](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/LANDINGPAGECOLOR.png)
 
 
-#### Itinerary List
-###### Wireframe
-![Wireframe](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/ITINERARYCARDLIST.png)
+## Itinerary List
 
-###### Mock-up
-![MockUp](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/ITINERARYCARDLISTCOLOR.png)
+![Wireframe](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/ITINERARYCARDLIST.png)  ![MockUp](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/ITINERARYCARDLISTCOLOR.png)
 
 
-#### Event Item
+## Event Item
 
-![Wireframe](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/EXPANDEDCARD.png)![MockUp](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/EXPANDEDCARDCOLOR.png)
+![Wireframe](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/EXPANDEDCARD.png)  ![MockUp](https://github.com/mktaylorolsen/vueapp/blob/main/readmeimg/EXPANDEDCARDCOLOR.png)
 
